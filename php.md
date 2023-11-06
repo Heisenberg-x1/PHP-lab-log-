@@ -28,3 +28,24 @@
 
 
 ### *Variables
+- Container for storing data
+- We declare variables using the $ sign
+- We can assign values to variables using the assignment operator
+```php
+<?php
+    $name = "Nerd42";
+    $age = 22;
+    echo $name;
+    echo $age;
+```
+- We can then reassign values to an already declared variable.
+
+```php
+    $name = "Nerd42";
+    $age = 22;
+    echo "I am $name and age is $age <br />";
+    $name = "nerd44";
+    echo "I changed my name to $name"
+```
+
+### *Data types
