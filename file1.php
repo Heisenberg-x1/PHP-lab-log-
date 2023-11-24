@@ -78,5 +78,37 @@ for ($i =0; $i < count($nums); $i++){
 
 ?>
 
+<!--Associative arrays/ Dictionaries-->
+<?php
+$students = ["Eddy"=>"A", "Mark" =>"C", "Joan" => "B"];
+foreach ($students as $student){
+    echo "<p>$student</p>";
+}
+//$students["Mark"] = "D";
+//echo $students["Mark"];
+//?>
+<p>Enter your name to get grade.</p> <br>
+<form action="file1.php" method="post">
+    <input type="text" name="student" placeholder="Name: ">
+    <br> <br>
+    <input type="submit" value="get grade">
+</form>
+
+
+<?php
+// first we use the isset in $_POST["student"] to check if the form has been submitted
+// the second isset is used to check if the student name given exists in the associative array/dictionary of students
+
+if(isset($_POST["student"])){
+    $name = $_POST["student"];
+    if(isset($students[$name])){
+        echo "<p>Your grade is $students[$name]</p>";
+    } else{
+        echo $name . " is not in the school database";
+    }
+}
+?>
+
+
 </body>
 </html>
