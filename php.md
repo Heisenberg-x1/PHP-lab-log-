@@ -49,3 +49,53 @@
 ```
 
 ### *Data types
+
+(i) Strings
+- plain text
+(ii) Integer 
+- whole numbers
+(iii) Floating point numbers
+- decimals
+(iv) Booleans
+- True or False values
+
+- Null in php is a special type that represents no value.
+
+### Working with Strings
+ Some common string methods are:
+ 
+```markdown
+- strlen()
+- strtolower()
+- strtoupper()
+- substr() - takes 3 params. String, offset, length of new string
+
+```
+- Accessing characters in strings 
+```php
+echo $text[2]; //accessing the 3rd char
+```
+
+- Modifying the string using indexing 
+```php
+$text[2] = "B";
+echo "<br>" . $text;
+```
+- Replacing elements in a string 
+```php
+$text = str_replace("random", "changed", $text);
+echo "<br>" . $text;
+```
+
+### Working with numbers
+- There arte a bunch of math functions in php
+- The most common ones are as follows:
+```php
+ echo "<br>Sqrt: " . sqrt($num);
+ echo "<br>Round: " . round(sqrt($num));
+ echo "<br>Floor: " . floor(sqrt($num));
+ echo "<br>Ceil: " . ceil(sqrt($num));
+ echo "<br>Random num btwn 1 & 100: " . rand(1,100);
+ echo "<br>min of 2 and 45: " . min(2,45); // max works the same way too
+```
+
