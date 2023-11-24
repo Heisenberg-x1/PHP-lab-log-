@@ -99,3 +99,20 @@ echo "<br>" . $text;
  echo "<br>min of 2 and 45: " . min(2,45); // max works the same way too
 ```
 
+### Getting user data with forms 
+- We can use the get method to get the data from forms 
+```php
+<form action="inputs.php" method="get">
+            Name: <input type="text" name="name">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+
+            <?php
+            echo  "Hello " . $_GET["name"];
+            ?>
+        </form>
+```
+- The action attribute specifies where the form data should be handled
+- The get attribute species the HTTP method to be used when submitting the form data
+- We can then access the data using the $_GET super-global array.
