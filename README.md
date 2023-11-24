@@ -1,4 +1,4 @@
-# PHP Learning Project
+# PHP LOG
 
 This project is designed to help beginners learn PHP from scratch. It covers fundamental concepts such as variables, data types, and more. It also includes a variety of exercises and projects to reinforce what you've learned.
 
