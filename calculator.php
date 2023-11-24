@@ -25,7 +25,7 @@
 </head>
 <body>
 <!--We can also edit the values of num1 and num2 from the address bar-->
-<form action="calculator.php" method="get">
+<form action="calculator.php" method="post">
     <input type="number" name="num1" placeholder="Enter first number">
     <br>
     <br>
@@ -34,7 +34,7 @@
     <br>
     <input type="submit" value="calculate">
     <?php
-    $result = $_GET["num1"] + $_GET["num2"];
+    $result = $_POST["num1"] + $_POST["num2"];
     echo "<p>Result: $result</p>"
     ?>
 </form>
