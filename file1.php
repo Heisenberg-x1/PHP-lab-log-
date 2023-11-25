@@ -109,6 +109,29 @@ if(isset($_POST["student"])){
 }
 ?>
 
+<?php
+echo "While loop";
+$index = 0;
+while($index<=5){
+    echo $index . "<br>";
+    $index++;
+}
+//Do while loops enables us to execute the code block at least once before checking the conditions.
+echo "Do while loop: ";
+$index2 = 6;
+do{
+    echo $index2;
+    $index2++;
+} while($index2 <=5)
+//This is a single line comment
+/*
+ * This is
+ * a multiline
+ * comment
+ * */
+?>
+
+
 
 </body>
 </html>

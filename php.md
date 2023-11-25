@@ -167,3 +167,19 @@ echo $colors[0] . "<br>";
 ```php
 <input type="number" step="0.01" name="num1" placeholder="Enter num1">
 ```
+- Switch statements and while loops have the same syntax as in other languages.
+
+**using include**
+- We can use include in php to include other files. We can for example create header and footer hml files that is going to b e reused in different pages of a website, and just include in thise websites without having to rewrite them again
+```php
+<?php
+include  "header.html";
+
+?>
+<p>
+    ferri iusto no docendi tractatos an sapien ea veritus nonumy luptatum esse invenire facilisis elementum comprehensam nisi sea qui maximus labores constituto sodales cum meliore elitr tale errem tation volumus delectus massa mentitum habemus graecis possit utroque ubique porro omnesque gubergren viris posuere evertitur necessitatibus tota postea mentitum felis verterem metus nibh faucibus magnis et quod facilis tritani dui cum volutpat tempor natum conubia saperet libero consul sumo tota melius risus morbi at atqui posuere fabellas cursus placerat vocibus vero nihil legere faucibus finibus autem est veniam posidonium varius adipisci omittam accusata accumsan graece impetus invenire eripuit eros mauris conceptam
+</p>
+<?php include "footer.html"?>
+```
+- In the example above, the footer and the header files are being reused in the current file.
+- 
