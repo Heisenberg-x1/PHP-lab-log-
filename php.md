@@ -162,3 +162,8 @@ echo $colors[0] . "<br>";
 - When using return keyword in functions, any code that comes after the return statement never gets executed.
 - If else block are used just like in other languages
 - The syntax is almost the same.
+- When getting data from forms, we can add the step attribute in number input tags to make it possible to get decimal numbers. Check the code illustration below.
+
+```php
+<input type="number" step="0.01" name="num1" placeholder="Enter num1">
+```
