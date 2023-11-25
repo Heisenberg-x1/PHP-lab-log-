@@ -147,8 +147,10 @@ echo "<br>" . $text;
 $colors = array("red", "green", "blue", "indigo", "yellow");
 echo $colors[0] . "<br>";
 ```
-- When getting data from a checkboxes, you might wanna set the name of the items to be the same as it makes it easier to group the checkboxes
-- Also, the name should have square brackets at the end 
+
+- When getting data from a checkboxes, you might wanna set the name of the items to be the same as it makes it easier to
+  group the checkboxes
+- Also, the name should have square brackets at the end
 
 ```php
 <form action="checkboxes.php" method="post">
@@ -159,18 +161,24 @@ echo $colors[0] . "<br>";
     <input type="submit" value="submit">
 </form>
 ```
+
 - When using return keyword in functions, any code that comes after the return statement never gets executed.
 - If else block are used just like in other languages
 - The syntax is almost the same.
-- When getting data from forms, we can add the step attribute in number input tags to make it possible to get decimal numbers. Check the code illustration below.
+- When getting data from forms, we can add the step attribute in number input tags to make it possible to get decimal
+  numbers. Check the code illustration below.
 
 ```php
 <input type="number" step="0.01" name="num1" placeholder="Enter num1">
 ```
+
 - Switch statements and while loops have the same syntax as in other languages.
 
 **using include**
-- We can use include in php to include other files. We can for example create header and footer hml files that is going to b e reused in different pages of a website, and just include in thise websites without having to rewrite them again
+
+- We can use include in php to include other files. We can for example create header and footer hml files that is going
+  to b e reused in different pages of a website, and just include in thise websites without having to rewrite them again
+
 ```php
 <?php
 include  "header.html";
@@ -181,5 +189,38 @@ include  "header.html";
 </p>
 <?php include "footer.html"?>
 ```
+
 - In the example above, the footer and the header files are being reused in the current file.
-- 
+
+### Classes,properties, methods & Constructors
+
+```php
+class Book{
+//    We use the var keyword to declare properties in a class
+//In modern php we can use private, public and protected to declare properties
+    var $title;
+    var $author;
+    var $price;
+    public  $pages;
+//    Below is a constructor
+    function  __construct($title, $author, $pages,$price)
+    {
+        $this->title = $title;
+        $this->price = $price;
+        $this->pages = $pages;
+        $this->author = $author;
+    }
+    function isExpensive()
+    {
+        if ($this->price > 1000) {
+            echo "$this->title is expensive <br>";
+        } else {
+            echo "$this->title is cheap <br>";
+        }
+    }
+}
+$book1 = new Book("Harry Potter", "Potter", 400, 1200);
+$book2 = new Book("Great Egypt", "Warder", 700, 200);
+$book2->isExpensive();
+
+```
