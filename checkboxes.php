@@ -15,8 +15,6 @@
     banana: <input type="checkbox" name="fruits[]" value="banana"> <br>
     pear: <input type="checkbox" name="fruits[]" value="pear"> <br>
     <input type="submit" value="submit">
-
-
 </form>
 <?php
 $fruits = $_POST["fruits"];

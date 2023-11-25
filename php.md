@@ -147,3 +147,18 @@ echo "<br>" . $text;
 $colors = array("red", "green", "blue", "indigo", "yellow");
 echo $colors[0] . "<br>";
 ```
+- When getting data from a checkboxes, you might wanna set the name of the items to be the same as it makes it easier to group the checkboxes
+- Also, the name should have square brackets at the end 
+
+```php
+<form action="checkboxes.php" method="post">
+    <!--    The name atteibute should be the same as it allows u to group the checkboxes-->
+    Apple: <input type="checkbox" name="fruits[]" value="apple"> <br>
+    banana: <input type="checkbox" name="fruits[]" value="banana"> <br>
+    pear: <input type="checkbox" name="fruits[]" value="pear"> <br>
+    <input type="submit" value="submit">
+</form>
+```
+- When using return keyword in functions, any code that comes after the return statement never gets executed.
+- If else block are used just like in other languages
+- The syntax is almost the same.
