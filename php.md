@@ -102,7 +102,7 @@ echo "<br>" . $text;
 
 ### Working with numbers
 
-- There arte a bunch of math functions in php
+- There are a bunch of math functions in php
 - The most common ones are as follows:
 
 ```php

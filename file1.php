@@ -19,7 +19,7 @@ echo "I am $name and age is $age <br />";
 $name = "nerd44";
 echo "I changed my name to $name <br>";
 $isMale = True;
-echo var_export($isMale, True);
+echo var_export($isMale, True); 
 //    String and string methods
 echo "<br>";
 $text = "This is a random string ";
@@ -68,7 +68,7 @@ $colors[$length] = "violet";
 echo "<br>Length: " . count($colors);
 //remove an element from the array
 unset($colors[2]);
-echo "<br>" . $colors[2];
+echo "<br>" . $colors[1];
 // sort an array
 $nums = [2,5,2,23,5,3,13,43,123,56,54];
 sort($nums);
@@ -122,15 +122,29 @@ $index2 = 6;
 do{
     echo $index2;
     $index2++;
-} while($index2 <=5)
+} while($index2 <=5);
 //This is a single line comment
 /*
  * This is
  * a multiline
  * comment
  * */
+$school = "ELTE";
+echo "<h2>$school</h2>";
+$random = "Hello y'all, me here";
+$chars = explode(" ", $random);
+foreach ($chars as $char ) {
+    echo $char . "<br>" ;
+}
 ?>
 
+<?php
+function even($num){
+    return $num%2 === 0;
+}
+echo even(241)? "Even" : "Not Even";
+
+?>
 
 
 </body>
